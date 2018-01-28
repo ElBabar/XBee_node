@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:Libabar
 LIBS:XBee_node-cache
 EELAYER 25 0
 EELAYER END
@@ -218,10 +217,6 @@ Text Label 5400 3850 0    60   ~ 0
 GNDL
 Text Label 5400 4150 0    60   ~ 0
 +3.3V
-Text Label 2350 1550 0    60   ~ 0
-TX
-Text Label 2350 1650 0    60   ~ 0
-RX
 Text Label 7050 3850 0    60   ~ 0
 TX
 Text Label 7050 4150 0    60   ~ 0
@@ -381,12 +376,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 4250 5400 4150
 Wire Wire Line
-	2800 1550 2350 1550
-Wire Wire Line
-	2800 1650 2350 1650
-Wire Wire Line
 	3800 2850 4250 2850
-Connection ~ 8500 1950
 Connection ~ 8500 2050
 Connection ~ 8500 2150
 Connection ~ 8500 2250
@@ -396,8 +386,6 @@ Connection ~ 8500 2550
 Connection ~ 8500 2650
 Connection ~ 8500 2750
 Connection ~ 8500 2850
-Wire Wire Line
-	8500 1850 8500 3000
 Wire Wire Line
 	2350 1950 2800 1950
 Wire Wire Line
@@ -418,10 +406,6 @@ Wire Wire Line
 	2800 1850 2350 1850
 Text Label 2350 1850 0    60   ~ 0
 GNDL
-Text Label 2350 1950 0    60   ~ 0
-D2
-Text Label 2350 2050 0    60   ~ 0
-D3
 Text Label 2350 2150 0    60   ~ 0
 D4
 Text Label 2350 2250 0    60   ~ 0
@@ -435,10 +419,6 @@ D8
 Text Label 2350 2650 0    60   ~ 0
 D9
 Wire Wire Line
-	9350 1850 9750 1850
-Wire Wire Line
-	9350 1950 9750 1950
-Wire Wire Line
 	9350 2050 9750 2050
 Wire Wire Line
 	9350 2150 9750 2150
@@ -450,10 +430,6 @@ Wire Wire Line
 	9350 2450 9750 2450
 Wire Wire Line
 	9350 2550 9750 2550
-Text Label 9750 1850 0    60   ~ 0
-D2
-Text Label 9750 1950 0    60   ~ 0
-D3
 Text Label 9750 2050 0    60   ~ 0
 D4
 Text Label 9750 2150 0    60   ~ 0
@@ -647,4 +623,10 @@ Text Label 5550 800  0    60   ~ 0
 5VL
 Text Label 5550 1100 0    60   ~ 0
 GNDL
+Wire Wire Line
+	8500 2050 8500 3000
+Text Label 2350 2050 0    60   ~ 0
+TX
+Text Label 2350 1950 0    60   ~ 0
+RX
 $EndSCHEMATC
